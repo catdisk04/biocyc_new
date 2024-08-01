@@ -325,7 +325,8 @@ class BioCyc(object):
         r = requests.get(url, params=params)
         if r.status_code == 200:
             # Parse and return the XML
-            return et.fromstring(r.text)
+            #return et.fromstring(r.text)
+            return r.text
         else:
             return False
 
