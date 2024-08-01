@@ -298,6 +298,8 @@ class BioCyc(object):
         self._locals = defaultdict(list)
         self._synonyms = defaultdict(dict)
         self._foreign_ids = defaultdict(list)
+
+        print('in_set_organism")
         
     def set_detail(self, detail):
         if detail in [DETAIL_NONE, DETAIL_LOW, DETAIL_FULL]:
